@@ -1,7 +1,6 @@
 streamlit
 pandas
-folium
-requests
-numpy 
-plotly 
- 
+folium==0.12.1.post1
+requests==2.28.1
+numpy
+plotly==5.10.0
