@@ -180,19 +180,19 @@ def prepare_and_save_chart_data(zearn_df,unemep_df, job_df, emp_df, spend_df,loc
     spend_df_chart = prepare_for_chart(spend_df, ['name', 'spend_all'],loc)
 
     # Create a folder to save chart data if it doesn't exist
-    if not os.path.exists('Datas/Chart Datas'):
-        os.makedirs('Datas/Chart Datas')
+    if not os.path.exists('./Datas/Chart Datas'):
+        os.makedirs('./Datas/Chart Datas')
 
     # Save the prepared data to CSV files
-    zearn_df_chart.to_csv("Datas/Chart Datas/zearn_df_chart.csv")
-    unemep_df_chart.to_csv("Datas/Chart Datas/unemep_df_chart.csv")
-    job_df_chart.to_csv("Datas/Chart Datas/job_df_chart.csv")
-    emp_df_chart.to_csv("Datas/Chart Datas/emp_df_chart.csv")
-    spend_df_chart.to_csv("Datas/Chart Datas/spend_df_chart.csv")
+    zearn_df_chart.to_csv("./Datas/Chart Datas/zearn_df_chart.csv")
+    unemep_df_chart.to_csv("./Datas/Chart Datas/unemep_df_chart.csv")
+    job_df_chart.to_csv("./Datas/Chart Datas/job_df_chart.csv")
+    emp_df_chart.to_csv("./Datas/Chart Datas/emp_df_chart.csv")
+    spend_df_chart.to_csv("./Datas/Chart Datas/spend_df_chart.csv")
 
     # Print information to the Streamlit app
     st.write("Chart data prepared and saved successfully!")
 
 if __name__ == '__main__':
-    loc = pd.read_csv('Datas/us_county_latlng.csv')
+    loc = pd.read_csv('./Datas/us_county_latlng.csv')
     loc = loc.rename(columns={'fips_code':'countyfips'})

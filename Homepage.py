@@ -41,7 +41,7 @@ data_links = {
     "Zearn - County - Weekly": "https://github.com/OpportunityInsights/EconomicTracker/raw/main/data/Zearn%20-%20County%20-%20Weekly.csv",
 }
 
-def clean_data_folder(data_folder="Datas/Raw Datas"):
+def clean_data_folder(data_folder="./Datas/Raw Datas"):
     # Remove all files in the "Raw Datas" folder 
     for file in os.listdir(data_folder):
         file_path = os.path.join(data_folder, file)
@@ -61,8 +61,8 @@ def download_all_data():
     
     # Clean the "Raw Datas" folder before downloading new data
     clean_data_folder()
-    clean_data_folder(data_folder= "Datas/Maps")
-    clean_data_folder(data_folder= "Datas/Chart Datas")
+    clean_data_folder(data_folder= "./Datas/Maps")
+    clean_data_folder(data_folder= "./Datas/Chart Datas")
 
     # Create a progress bar
     progress_bar = st.progress(0)
@@ -75,7 +75,7 @@ def download_all_data():
 
     # Iterate through the data links and download the files
     for filename, link in data_links.items():
-        destination_path = os.path.join("Datas/Raw Datas", filename + ".csv")
+        destination_path = os.path.join("./Datas/Raw Datas", filename + ".csv")
         response = requests.get(link, stream=True)
 
         if response.status_code == 200:
@@ -96,9 +96,9 @@ if __name__ == '__main__':
      # Create the "Raw Datas" folder if it doesn't exist
 
     
-    create_path("Datas/Raw Datas")
-    create_path("Datas/Maps")
-    create_path("Datas/Chart Datas")
+    create_path("./Datas/Raw Datas")
+    create_path("./Datas/Maps")
+    create_path("./Datas/Chart Datas")
     
     print(st.__version__)
     
