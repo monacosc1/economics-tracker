@@ -24,7 +24,7 @@ Clone the repository:
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/enesbol/Economic-Tracker-Streamlit-Dashboard
+    git clone https://github.com/monacosc1/economics-tracker
     ```
  
 2. Navigate to the repository's root directory using your terminal. 
