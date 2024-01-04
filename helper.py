@@ -185,7 +185,7 @@ def prepare_and_save_chart_data(zearn_df,unemep_df, job_df, emp_df, spend_df,loc
 
     # Save the prepared data to CSV files
     zearn_df_chart.to_csv("./Datas/Chart Datas/zearn_df_chart.csv")
-    unemep_df_chart.to_csv("./Datas/Chart Datas/unemep_df_chart.csv")
+    unemep_df_chart.to_csv("./Datas/Chart Datas/unemp_df_chart.csv")
     job_df_chart.to_csv("./Datas/Chart Datas/job_df_chart.csv")
     emp_df_chart.to_csv("./Datas/Chart Datas/emp_df_chart.csv")
     spend_df_chart.to_csv("./Datas/Chart Datas/spend_df_chart.csv")
