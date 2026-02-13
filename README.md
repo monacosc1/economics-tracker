@@ -1,50 +1,33 @@
-# Economic-Tracker-Streamlit-Dashboard
-Navigate real-time economic trends through our Streamlit-powered Economic Tracker Dashboard. Delve into live data showcasing employment rates, consumer spending, and job postings across counties, industries, and income groups, all curated from Opportunity Insights.
+# Economic Tracker Dashboard
 
+Streamlit dashboard tracking COVID-era economic recovery using Opportunity Insights data for employment, spending, and unemployment claims across U.S. counties.
 
+## Key Finding
 
-1. Economic Tracker Streamlit Dashboard
-Explore real-time insights into employment rates, consumer spending, and job postings across counties, industries, and income groups with the Economic Tracker Streamlit Dashboard.
+![San Francisco Employment](charts/economic-tracker-fig1-sf-employment.png)
 
-[Link to the Economic Tracker Dashboard](https://economic-tracker-app-dashboard-2hutqvhmjz3npuaex8nhyh.streamlit.app/)
+*San Francisco employment levels relative to pre-pandemic baseline, illustrating the prolonged recovery gap in major tech-hub metros.*
 
-2. Dashboard Overview
-The Economic Tracker Dashboard offers dynamic visualizations and analysis of economic data, providing valuable insights into various economic indicators. This includes employment trends, consumer spending patterns, and job postings across different regions and income groups.
+## Overview
 
-3. How to Use
-Navigate through different pages using the left-side menu to explore maps and charts.
-Each page represents a heatmap, allowing you to overlay various features on the map.
-Select a county and a specific feature to view historical data as time series charts.
+The COVID-19 pandemic caused an unprecedented economic disruption, but recovery has been far from uniform across U.S. metros. This dashboard leverages the Opportunity Insights Economic Tracker dataset to visualize employment rates, consumer spending patterns, and unemployment claims at the county level. Interactive filters allow users to compare recovery trajectories across regions, industries, and income groups to understand which areas bounced back quickly and which continue to lag.
 
+## Tools & Technologies
 
-4.Steps to Reproduce Results
+- Python
+- Pandas
+- Streamlit
+- Matplotlib
+- Seaborn
 
-Clone the repository:
+## Results
 
-1. Clone the repository
+Employment recovery has been highly uneven across metros, with San Francisco still trailing pre-pandemic levels years after the initial shock. Consumer spending patterns tell a different story, with some Sun Belt metros showing strong rebounds:
 
-    ```bash
-    git clone https://github.com/monacosc1/economics-tracker
-    ```
- 
-2. Navigate to the repository's root directory using your terminal. 
- 
-3. Install Dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+![Miami Consumer Spending](charts/economic-tracker-fig3-miami-spending.png)
 
-2. Run the Streamlit Web App:
+*Miami-area consumer spending recovery, showing a faster rebound compared to many coastal tech-hub metros.*
 
-    ```bash
-    streamlit run Homepage.py
-    ```
+## View Full Analysis
 
-3. This will launch the Streamlit web app and display the predictions in your default web browser.
-
- 
-
-Acknowledgments
-Data sources: Opportunity Insights, Affinity Solutions, Lightcast, Department of Labor, Zearn.
-Opportunity Insights Economic Tracker for inspiration and guidance.
-Feel free to explore and analyze economic trends using the Economic Tracker Streamlit Dashboard. For any questions or issues, please contact your-email@example.com.
+For the complete writeup with all charts and methodology, visit the [project page on scottmonaco.com](https://scottmonaco.com/economic-tracker).
