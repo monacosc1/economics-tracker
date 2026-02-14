@@ -8,7 +8,7 @@ This dashboard visualizes county-level economic recovery using data from the [Op
 
 ## Live App
 
-[Streamlit App](https://economics-tracker.streamlit.app/)
+[Streamlit App](https://economics-tracker-ktkerofyvkwgrkxhz5wiua.streamlit.app/)
 
 ## Key Findings
 
